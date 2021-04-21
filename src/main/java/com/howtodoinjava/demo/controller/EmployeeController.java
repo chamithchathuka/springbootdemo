@@ -15,7 +15,7 @@ public class EmployeeController {
     {
       RestTemplate restTemplate = new RestTemplate();
       String fooResourceUrl
-          = "https://run.mocky.io/v3/b1617f22-6e42-43fa-870c-64466c5900e4";
+          = "http://10.128.0.2";
       ResponseEntity<String> response
           = restTemplate.getForEntity(fooResourceUrl, String.class);
 
