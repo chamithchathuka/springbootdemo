@@ -15,11 +15,18 @@ public class EmployeeController {
     {
       RestTemplate restTemplate = new RestTemplate();
       String fooResourceUrl
-          = "http://10.128.0.2";
+          = "http://192.168.96.2";
       ResponseEntity<String> response
           = restTemplate.getForEntity(fooResourceUrl, String.class);
 
 		return response.getBody();
+    }
+
+    @RequestMapping("/hello")
+    public String hellow()
+    {
+
+		return "Hello";
     }
 
 }
